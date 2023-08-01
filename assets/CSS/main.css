@@ -491,3 +491,26 @@ footer .copy-rights p:last-child i {
     color: red;
 }
 /* End Footer Section */
+
+/* Start home back arrow*/
+
+.arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 2;
+    background-color: #01b8dc;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    background-color: #87f1be;
+}
+
+.arrow i {
+    color: white;
+}
+/* End home back arrow*/
