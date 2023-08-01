@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-align: right;
+    font-family: Raleway,sans-serif;
+}
+
+/* Strat Header */
+
+header {
+    position: sticky;
+    z-index: 1;
+    box-shadow: 0 1px 15px rgba(0,0,0,0.1);
+    top: 0;
+    padding: 10px 0;
+    background-color: white;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 90px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li:not(:last-child) {
+    padding: 10px 0 10px 30px;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li:nth-child(5) a {
+    color: #03b0db;
+}
+
+header nav ul li a:hover {
+    color: #03b0db;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: #6a7489;
+}
+
+header nav ul li:last-child {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li button {
+    padding: 10px 25px;
+    font-weight: normal;
+    border: 1px #cdd1d9 solid;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.3s;
+}
+
+header nav ul li button:hover {
+    background-color: blue;
+    color: white;
+}
+
+header nav .logo {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 32px;
+    color: #6a7489;
+    line-height: 1.5;
+}
+
+header nav .logo span:first-child {
+    color: #f38300;
+}
+
+header nav .logo span:last-child {
+    color: #03b0db;
+}
+/* End Header */
+
+/* Start Section */
+
+.landing-section {
+    display: flex;
+    align-items: center;
+    margin: 0 90px;
+    height: 100vh;
+}
+
+.landing-section .image img {
+    max-width: 100%;
+    animation: move 4s infinite;
+}
+
+.landing-section .container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.landing-section .container .description h1 {
+    margin-bottom: 10px;
+    font-size: 48px;
+    font-weight: 700;
+    
+}
+
+.landing-section .container .description p {
+    color: #858ea1;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.landing-section .container .description button {
+    padding: 10px 30px;
+    background-color: #01b8dc;
+    box-shadow: 0 5px 30px 5px #87f1be;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.landing-section .container .description button:hover {
+    background-color: blue;
+    box-shadow: 0 5px 30px rgb(85, 85, 236);
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(30px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(30px);
+    }
+}
+
+/* End Section */
+
+/* Start Row-onw */
+.about {
+    margin: 0 90px;
+}
+
+.about .row-one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .row-one .box {
+    background-color: #f9f9fa;
+    width: 49%;
+    padding: 20px;
+}
+
+.about .row-one .box i{
+    font-size: 36px;
+    color: #01b8dc;
+    margin-bottom: 15px;
+}
+.about .row-one .box h2{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.about .row-one .box p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 14px;
+    color: #5f687b;
+}
+/* End Row-one */
+
+/* Start Row-two */
+.about .row-two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .row-two .box {
+    width: 49%;
+}
+
+.about .row-two .box h2{
+    font-weight: 700;
+    font-size: 32px;
+    color: #5f687b;
+}
+
+.about .row-two .box p {
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.about .row-two .image {
+    width: 49%;
+}
+
+.about .row-two .image img {
+    max-width: 100%;
+}
+/* End Rwo-tow */
+
+/* Start Services Section */
+
+.services {
+    background-color: #f9f9fa;
+    margin: 0 90px;
+    padding-top: 50px;
+}
+
+.services .heading {
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.services .heading h2 {
+    font-size: 32px;
+    color: #5f687b;
+    margin-bottom: 10px;
+}
+
+.services .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.services .content .box {
+    background-color: white;
+    width: calc(90% / 4);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.services .content .box i{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #01b8dc;
+}
+
+.services .content .box p{
+    margin-bottom: 20px;
+    font-size: 26px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.services .content .box p:hover {
+    color: #01b8dc;
+}
+/* End Services Section */
+
+/* Start Customers Section */
+.customers{
+    margin: 0 90px;
+    padding: 150px 0;
+}
+
+.customers .heading {
+    text-align: center;
+}
+
+.customers .heading h2 {
+    font-size: 32px;
+    color: #5f687b;
+    margin-bottom: 10px;
+}
+/* End Customers Section */
+
+/* Start Contact-us Section */
+.contact-us{
+    margin: 0 90px;
+}
+
+.contact-us .heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-us .heading h2 {
+    font-size: 32px;
+    color: #5f687b;
+    margin-bottom: 10px;
+}
+
+.contact-us .field {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-us .field form {
+    width: 60%;
+}
+.contact-us .field form,
+.contact-us .field .info { 
+    background-color: #f9f9fa;
+    padding: 50px 40px;
+    border-top: 3px #01b8dc solid;
+}
+
+.contact-us .field .info {
+    width: 35%;
+}
+
+.contact-us .field .info .box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-us .field .info .box i{
+    text-align: center;
+    line-height: 2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #01b8dc;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.contact-us .field .info .box i:hover {
+    background-color: #01b8dc;
+    color: white;
+}
+
+.contact-us .field .info .box .text-content h2{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #5f687b;
+}
+
+.contact-us .field .info .box .text-content p{
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #949cac;
+    
+}
+
+.contact-us form .name-email{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-us form .name-email div {
+    width: 48%;
+}
+
+
+.contact-us form .name-email div input {
+    width: 100%;
+    height: 44px;
+    margin-top: 10px;
+}
+
+.contact-us form .topic {
+    width: 100%;
+    height: 44px;
+}
+
+.contact-us form textarea {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.contact-us form textarea,
+.contact-us form .name-email div input,
+.contact-us form input[type = "text"] {
+    margin-bottom: 30px;
+    border: 1px solid #ced4da;
+}
+
+.contact-us form textarea:focus,
+.contact-us form .name-email div input:focus,
+.contact-us form input[type = "text"]:focus {
+    border: 1px solid #03b0db;
+    outline: none;
+}
+
+.contact-us form input[type = submit] {
+    padding: 10px 25px;
+    font-size: 20px;
+    box-shadow: 0 5px 30px 5px #87f1be;
+    background-color: #01b8dc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.contact-us form input[type = submit]:hover {
+    background-color: blue;
+    box-shadow: 0 5px 30px rgb(85, 85, 236);
+}
+
+/* End Contact-us Section */
+
+/* Start Footer Section */
+
+footer {
+    background-color: #f3f4f6;
+    text-align: center;
+}
+
+footer h2 {
+    padding: 40px 0;
+    font-size: 36px;
+    font-weight: 700;
+    color: #5f687b;
+}
+
+footer i:not(footer .copy-rights i) {
+    color: #5f687b;
+    background-color: #eaecef;
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    transition: 0.4s;
+    cursor: pointer;
+    font-size: 17px;
+    line-height: 2 !important;
+    margin-left: 5px;
+}
+
+footer i:not(footer .copy-rights i):hover{
+    color: white;
+    background-color: #01b8dc;
+}
+
+footer .copy-rights {
+    border-top: 1px solid #d9dce2;
+    padding: 50px 0;
+    margin: 80px 90px 0 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer .copy-rights p:first-child {
+    color: #5f687b;
+    font-size: 14px;
+
+}
+footer .copy-rights p:first-child span {
+    font-weight: bold;
+    font-family: cursive;
+}
+
+footer .copy-rights p:last-child{
+    color: #5f687b;
+    font-size: 14px;
+}
+
+footer .copy-rights p:last-child a {
+    font-family: cursive;
+    text-decoration: none;
+    font-weight: bold;
+    color: red;
+}
+
+footer .copy-rights p:last-child i {
+    color: red;
+}
+/* End Footer Section */
